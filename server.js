@@ -1,5 +1,4 @@
-require('dotenv').config();
-
+const {DB_NAME,DB_USER,DB_HOST,DB_PASSWORD} = require('./config.js')
 const express = require('express');
 const { createPool } = require('mysql2/promise');
 const cors = require('cors');
@@ -11,10 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 const pool = createPool({
-  database: 'trabook_db',
-  user: 'xryj5b4e6gv67bbj3dpp',
-  host: 'aws.connect.psdb.cloud',
-  password: 'pscale_pw_oM6GMnVzOrNE9GDzhEEQeC85lA7ahHUB4qqAnwsgWqY',
+  database: DB_NAME,
+  user: DB_USER,
+  host: DB_HOST,
+  password: DB_PASSWORD,
   ssl: { rejectUnauthorized: false }
 });
 
