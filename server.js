@@ -12,9 +12,9 @@ app.use(express.json());
 
 const pool = createPool({
   database: 'trabook_db',
-  user: 'xz48r55moav5zhmb1de5',
+  user: 'xryj5b4e6gv67bbj3dpp',
   host: 'aws.connect.psdb.cloud',
-  password: 'pscale_pw_dNhC5hXaIz43l8KR5FVcZL4Fu0r3QKqpgiB1elzLjOZ',
+  password: 'pscale_pw_oM6GMnVzOrNE9GDzhEEQeC85lA7ahHUB4qqAnwsgWqY',
   ssl: { rejectUnauthorized: false }
 });
 
